@@ -27,9 +27,8 @@ export type ASFFileProps = {
 Install via npm:
 
 ```bash
-npm install asf-file-props
+npm i asf-file-props
 ```
-(as soon as I submit it, that is ¯\\\_(ツ)\_/¯)
 
 ## Usage
 ### With node.js:
