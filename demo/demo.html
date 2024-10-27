@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<style>
+    body {
+        width: 500px;
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+    }
+
+    table {
+        border: 1px solid salmon;
+        margin: 50px auto;
+        padding: 5px;
+    }
+</style>
+<h1>Select a file</h1>
+<input type="file" id="fileInput" accept="audio/x-ms-wma, video/x-ms-asf, video/x-ms-wmv">
+<table>
+    <thead><caption>Properties</caption>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody id="resultTable"></tbody>
+</table>
+<script type="module">
+    import parseASF from '../dist/index';
+
+    const fileInput = document.querySelector("#fileInput");
+    const resultTable = document.querySelector("#resultTable");
+
+    fileInput.addEventListener("change", async () => {
+        const file = fileInput.files[0];
+        const props = await parseASF.web(file);
+
+        console.table(props);
+
+        Object.entries(props).forEach(([key, value]) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `<td>${key}</td><td>${value}</td>`;
+            resultTable.appendChild(row);
+        });
+    });
+</script>

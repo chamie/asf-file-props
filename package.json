@@ -1,0 +1,24 @@
+{
+  "name": "asf-file-props",
+  "version": "1.0.0",
+  "description": "Extract basic metadata from ASF/WMA/WMV files",
+  "main": "./dist/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parse",
+    "ASD",
+    "WMA",
+    "WMV",
+    "duration",
+    "binary files"
+  ],
+  "devDependencies": {
+      "@types/node": "^18.19.2",
+      "typescript": "^4.9.5"
+  },
+  "author": "Chamie (github.com/chamie)",
+  "license": "MIT"
+}
