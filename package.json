@@ -1,8 +1,10 @@
 {
   "name": "asf-file-props",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extract basic metadata from ASF/WMA/WMV files",
+  "homepage": "https://github.com/chamie/asf-file-props",
   "main": "./dist/index.js",
+  "repository": "github:chamie/asf-file-props",
   "scripts": {
     "compile": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
