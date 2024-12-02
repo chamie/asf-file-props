@@ -53,10 +53,7 @@ if (props) {
 See [demo/demo.html](./demo/demo.html)
 
 ### Other
-The source is also basic enough to work as a good kick-start into working with binary data in JS/TS.
-
-## Why it might not be good enough for you
-It only parses one single metadata object from those files. Though you may always just start from there and get additional GUIDs and object specs from the official spec sheet.
+The source is also basic and straighforward, making it a good kick-start into working with binary data in JS/TS.
 
 ## License
 **asf-file-props** is freely distributable under the terms of the [MIT license][license-url].
