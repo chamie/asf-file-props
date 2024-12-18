@@ -1,6 +1,6 @@
 {
   "name": "asf-file-props",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Extract basic metadata from ASF/WMA/WMV files",
   "homepage": "https://github.com/chamie/asf-file-props",
   "main": "./dist/index.js",
@@ -11,7 +11,7 @@
   },
   "keywords": [
     "parse",
-    "ASD",
+    "ASF",
     "WMA",
     "WMV",
     "duration",
